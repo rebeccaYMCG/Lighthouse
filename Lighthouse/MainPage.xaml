@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:alohakit="clr-namespace:AlohaKit.Layouts;assembly=AlohaKit.Layouts"
              x:Class="Lighthouse.MainPage">
 
     <ScrollView>
@@ -8,13 +9,13 @@
             Padding="30,0"
             Spacing="25">
             <Image
-                Source="dotnet_bot.png"
-                HeightRequest="185"
+                Source="lighthouseicon.png"
+                HeightRequest="300"
                 Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
+                SemanticProperties.Description="icon image" />
 
             <Label
-                Text="Hello, World!"
+                Text="Program in process"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
 
@@ -30,6 +31,21 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+
+            <alohakit:WrapLayout 
+                Orientation="Horizontal"
+                Spacing="6"
+                HorizontalOptions="Center">
+                <BoxView Color="Red" />
+                <BoxView Color="Yellow" />
+                <BoxView Color="Orange" />
+                <BoxView Color="Purple" />
+                <BoxView Color="Blue" />
+                <BoxView Color="Green" />
+                <BoxView Color="LightGreen" />
+                <BoxView Color="Gray" />
+                <BoxView Color="Pink" />
+            </alohakit:WrapLayout>
         </VerticalStackLayout>
     </ScrollView>
 

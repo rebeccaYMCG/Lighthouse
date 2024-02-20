@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using AlohaKit.Layouts.Hosting;
+using Microsoft.Extensions.Logging;
+using SkiaSharp.Views.Maui.Controls.Hosting;
 
 namespace Lighthouse
 {
@@ -9,6 +11,9 @@ namespace Lighthouse
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseAlohaKitLayouts()
+                .UseMauiApp<App>()
+                .UseSkiaSharp(true)
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
