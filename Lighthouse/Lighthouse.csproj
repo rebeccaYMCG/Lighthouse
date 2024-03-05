@@ -65,6 +65,8 @@
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 		<PackageReference Include="AlohaKit.Layouts" Version="1.0.0" />
+		<PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+		
 	</ItemGroup>
 
 </Project>
